@@ -1,0 +1,25 @@
+{
+	"text": {
+		"key": "message.startingKeyboard",
+		"argGenerationMethodPath": "StartArgGenerator.getArgs"
+	},
+	"callbacks": [
+		[
+			{
+				"id": "VALIDATION",
+				"label": {
+					"key": "keyboard.validation"
+				},
+				"next": "validation/validation.json",
+				"action": "validate.CheckEmail.isEmailAddress"
+			},
+			{
+				"id": "SETTINGS",
+				"label": {
+					"key": "keyboard.settings"
+				},
+				"next": "setting/settings.json"
+			}
+		]
+	]
+}
